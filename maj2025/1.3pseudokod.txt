@@ -1,0 +1,15 @@
+funkcja przestaw2(n):
+    wynik <- 0
+    mnozyc <- 10
+    dopóki n > 0 wykonuj:
+        jeżeli n < 10:
+            wynik <- wynik + n * (mnozyc / 10)
+            przerwij
+        koncowka <- n mod 100
+        dziesiatka <- koncowka div 10
+        jednosc <- koncowka mod 10
+        wynik <- jednosc * mnozyc + dziesitka * (mnozyc / 10)
+        n <- n div 100
+        mnozyc <- mnozyc * 100
+    zwróc wynik
+
